@@ -9,8 +9,8 @@ The project focuses on creating a clean, responsive, and interactive experience 
 ## 🚀 Live Demo
 
 **Live Website:**
-https://hijabezahra182-alt.github.io/opportuna/
 
+https://hijabezahra182-alt.github.io/opportuna/
 ## 📌 Features
 
 * 🔎 Opportunity search
