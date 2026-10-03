@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OPPORTUNA — Discover. Apply. Grow.</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      OPPORTUNA
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#saved">Saved</a>
+      <a href="#categories">Categories</a>
+    </nav>
+
+    <button class="signin-btn">
+      Sign In
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          ✦ Opportunities for the next generation
+        </div>
+
+        <h1>
+          Your next
+          <span>opportunity</span>
+          starts here.
+        </h1>
+
+        <p>
+          Discover scholarships, internships, fellowships,
+          competitions and programs built to help students
+          move forward.
+        </p>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+          <div class="search-field">
+
+            <span>⌕</span>
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search scholarships, internships..."
+            >
+
+          </div>
+
+
+          <button
+            class="search-btn"
+            id="searchButton"
+          >
+            Explore
+          </button>
+
+        </div>
+
+
+        <!-- POPULAR -->
+
+        <div class="popular">
+
+          <span>Popular:</span>
+
+          <button
+            class="popular-tag"
+            data-search="Scholarship"
+          >
+            Scholarships
+          </button>
+
+          <button
+            class="popular-tag"
+            data-search="Internship"
+          >
+            Internships
+          </button>
+
+          <button
+            class="popular-tag"
+            data-search="Fellowship"
+          >
+            Fellowships
+          </button>
+
+          <button
+            class="popular-tag"
+            data-search="Competition"
+          >
+            Competitions
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO VISUAL -->
+
+      <div class="hero-visual">
+
+        <div class="opportunity-preview preview-one">
+
+          <div class="preview-icon">
+            S
+          </div>
+
+          <div>
+            <strong>
+              Türkiye Scholarship
+            </strong>
+
+            <small>
+              Fully Funded · Worldwide
+            </small>
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+        <div class="opportunity-preview preview-two">
+
+          <div class="preview-icon maroon">
+            I
+          </div>
+
+          <div>
+            <strong>
+              Tech Internship
+            </strong>
+
+            <small>
+              Remote · Students
+            </small>
+          </div>
+
+          <span>↗</span>
+
+        </div>
+
+
+        <div class="hero-orbit"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TRUST BAR ================= -->
+
+    <section class="trust-bar">
+
+      <p>
+        DISCOVER OPPORTUNITIES THAT MOVE YOU FORWARD
+      </p>
+
+      <div>
+        <span>Scholarships</span>
+        <span>Internships</span>
+        <span>Fellowships</span>
+        <span>Competitions</span>
+        <span>Youth Programs</span>
+      </div>
+
+    </section>
+
+
+    <!-- ================= EXPLORE ================= -->
+
+    <section
+      class="explore-section"
+      id="explore"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            EXPLORE OPPORTUNITIES
+          </span>
+
+          <h2>
+            Find something worth applying for.
+          </h2>
+
+        </div>
+
+        <div class="results-area">
+
+          <span id="resultsCount">
+            8 opportunities
+          </span>
+
+          <button id="resetSearch">
+            Reset
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- FILTERS -->
+
+      <div class="filters">
+
+        <button
+          class="filter active"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="filter"
+          data-filter="scholarship"
+        >
+          Scholarships
+        </button>
+
+        <button
+          class="filter"
+          data-filter="internship"
+        >
+          Internships
+        </button>
+
+        <button
+          class="filter"
+          data-filter="fellowship"
+        >
+          Fellowships
+        </button>
+
+        <button
+          class="filter"
+          data-filter="competition"
+        >
+          Competitions
+        </button>
+
+      </div>
+
+
+      <!-- OPPORTUNITY GRID -->
+
+      <div
+        class="opportunity-grid"
+        id="opportunityGrid"
+      >
+
+
+        <!-- OPPORTUNITY 1 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Türkiye Scholarship"
+          data-category="scholarship"
+          data-location="Türkiye"
+          data-type="Fully Funded"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo">
+              T
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            SCHOLARSHIP
+          </span>
+
+          <h3>
+            Türkiye Scholarship
+          </h3>
+
+          <p class="organization">
+            Türkiye Scholarships
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Fully Funded</span>
+            <span>International</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Coming Soon
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 2 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Global Tech Internship"
+          data-category="internship"
+          data-location="Remote"
+          data-type="Paid"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo maroon">
+              G
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            INTERNSHIP
+          </span>
+
+          <h3>
+            Global Tech Internship
+          </h3>
+
+          <p class="organization">
+            Future Labs
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Remote</span>
+            <span>Paid</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Oct 28, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 3 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Youth Leadership Fellowship"
+          data-category="fellowship"
+          data-location="Global"
+          data-type="Fully Funded"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo">
+              Y
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            FELLOWSHIP
+          </span>
+
+          <h3>
+            Youth Leadership Fellowship
+          </h3>
+
+          <p class="organization">
+            Global Youth Network
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Fully Funded</span>
+            <span>Leadership</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Nov 12, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 4 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Student Innovation Challenge"
+          data-category="competition"
+          data-location="Online"
+          data-type="Free Entry"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo maroon">
+              I
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            COMPETITION
+          </span>
+
+          <h3>
+            Student Innovation Challenge
+          </h3>
+
+          <p class="organization">
+            Innovation Hub
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Online</span>
+            <span>Free Entry</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Nov 20, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 5 -->
+
+        <article
+          class="opportunity-card"
+          data-title="International Student Scholarship"
+          data-category="scholarship"
+          data-location="Hungary"
+          data-type="Fully Funded"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo">
+              H
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            SCHOLARSHIP
+          </span>
+
+          <h3>
+            International Student Scholarship
+          </h3>
+
+          <p class="organization">
+            Global Education Program
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Fully Funded</span>
+            <span>Europe</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Jan 15, 2027
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 6 -->
+
+        <article
+          class="opportunity-card"
+          data-title="AI Research Internship"
+          data-category="internship"
+          data-location="Remote"
+          data-type="Paid"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo maroon">
+              A
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            INTERNSHIP
+          </span>
+
+          <h3>
+            AI Research Internship
+          </h3>
+
+          <p class="organization">
+            AI Research Labs
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>AI</span>
+            <span>Remote</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Dec 05, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 7 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Climate Youth Fellowship"
+          data-category="fellowship"
+          data-location="Online"
+          data-type="Fully Funded"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo">
+              C
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            FELLOWSHIP
+          </span>
+
+          <h3>
+            Climate Youth Fellowship
+          </h3>
+
+          <p class="organization">
+            Youth Climate Network
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Climate</span>
+            <span>Online</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Dec 18, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- OPPORTUNITY 8 -->
+
+        <article
+          class="opportunity-card"
+          data-title="Global Student MUN"
+          data-category="competition"
+          data-location="Online"
+          data-type="Free Entry"
+        >
+
+          <div class="card-top">
+
+            <div class="opportunity-logo maroon">
+              M
+            </div>
+
+            <button
+              class="save-btn"
+              aria-label="Save opportunity"
+            >
+              ♡
+            </button>
+
+          </div>
+
+          <span class="category-label">
+            COMPETITION
+          </span>
+
+          <h3>
+            Global Student MUN
+          </h3>
+
+          <p class="organization">
+            Student Diplomacy Forum
+          </p>
+
+          <div class="opportunity-tags">
+
+            <span>Online</span>
+            <span>Students</span>
+
+          </div>
+
+          <div class="deadline">
+
+            <span>
+              Deadline
+            </span>
+
+            <strong>
+              Dec 22, 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- NO RESULTS -->
+
+      <div
+        id="noResults"
+        class="no-results hidden"
+      >
+
+        <h3>
+          No opportunities found
+        </h3>
+
+        <p>
+          Try another keyword or category.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SAVED ================= -->
+
+    <section
+      class="saved-section"
+      id="saved"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            YOUR SHORTLIST
+          </span>
+
+          <h2>
+            Saved Opportunities
+          </h2>
+
+        </div>
+
+        <span id="savedTotal">
+          0 saved
+        </span>
+
+      </div>
+
+
+      <div
+        class="saved-container"
+        id="savedContainer"
+      >
+
+        <!-- JavaScript will add saved opportunities -->
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section
+      class="categories-section"
+      id="categories"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            EXPLORE BY TYPE
+          </span>
+
+          <h2>
+            Find your next move.
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <div class="category-card">
+
+          <span>✦</span>
+
+          <h3>
+            Scholarships
+          </h3>
+
+          <p>
+            Funding opportunities for education.
+          </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <span>⌘</span>
+
+          <h3>
+            Internships
+          </h3>
+
+          <p>
+            Build skills through real experience.
+          </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <span>◎</span>
+
+          <h3>
+            Fellowships
+          </h3>
+
+          <p>
+            Leadership and professional programs.
+          </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <span>◈</span>
+
+          <h3>
+            Competitions
+          </h3>
+
+          <p>
+            Test your ideas and win opportunities.
+          </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <span>◌</span>
+
+          <h3>
+            Conferences
+          </h3>
+
+          <p>
+            Connect, learn and meet new people.
+          </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <span>✧</span>
+
+          <h3>
+            Workshops
+          </h3>
+
+          <p>
+            Learn practical skills from experts.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= WHY ================= -->
+
+    <section class="why-section">
+
+      <div class="why-content">
+
+        <span class="eyebrow">
+          WHY OPPORTUNA
+        </span>
+
+        <h2>
+          Stop searching everywhere.
+          Start discovering smarter.
+        </h2>
+
+        <p>
+          Opportunities are everywhere, but finding the
+          right ones shouldn't require endless searching.
+          OPPORTUNA brings them together in one simple
+          experience.
+        </p>
+
+        <button class="dark-button">
+          Explore opportunities →
+        </button>
+
+      </div>
+
+
+      <div class="why-list">
+
+        <div>
+
+          <strong>
+            01
+          </strong>
+
+          <h3>
+            Discover faster
+          </h3>
+
+          <p>
+            Find opportunities in one organized place.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            02
+          </strong>
+
+          <h3>
+            Filter smarter
+          </h3>
+
+          <p>
+            Focus on opportunities that actually fit you.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            03
+          </strong>
+
+          <h3>
+            Never miss out
+          </h3>
+
+          <p>
+            Keep important opportunities saved for later.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+      <div>
+
+        <span class="eyebrow">
+          YOUR NEXT MOVE IS OUT THERE
+        </span>
+
+        <h2>
+          Discover something bigger.
+        </h2>
+
+      </div>
+
+      <button>
+        Explore now →
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div>
+
+      <div class="footer-logo">
+        OPPORTUNA
+      </div>
+
+      <p>
+        Discover. Apply. Grow.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#explore">
+        Explore
+      </a>
+
+      <a href="#saved">
+        Saved
+      </a>
+
+      <a href="#categories">
+        Categories
+      </a>
+
+      <a href="#home">
+        Back to top
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © 2026 OPPORTUNA. Built for ambitious students.
+    </p>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
